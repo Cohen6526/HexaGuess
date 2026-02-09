@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Colour Code Game</title>
+</head>
+<body>
+    <div id="maincontainer">
+        <h1 id="title">Hexadecimal color code guessing game! <br> Choose difficulty:</h1>
+        
+        <div id="colorSample"></div>
+        <div id="answerbox">
+            <div id="easy" class="options" onclick="startGame()">Easy</div>
+            <div id="medium" class="options" onclick="startGame('medium')">Medium</div>
+            <div id="hard" class="options" onclick="startGame('hard')">Hard</div>
+        <div id="0" class="answers" onclick="pop('0')">1</div>
+        <div id="1" class="answers" onclick="pop('1')">2</div>
+        <div id="2" class="answers" onclick="pop('2')">3</div>
+        <div id="3" class="answers" onclick="pop('3')">4</div>
+        <div id="4" class="answers" onclick="pop('4')">5</div>
+        <div id="5" class="answers" onclick="pop('5')">6</div>
+        <div id="6" class="answers" onclick="pop('6')">7</div>
+        <div id="7" class="answers" onclick="pop('7')">8</div>
+        </div>
+        <div id="gamemodechooser">Guess Codes  
+            <label class="switch" id="switch" onclick="changedifficulty()">
+                <input type="checkbox">
+                <span class="slider round"></span>
+        </label> 
+         Guess Colours</div>
+        <div id="scoreboard">Score: <span id="score"></span></div>
+    </div>
+</body>
+</html>
