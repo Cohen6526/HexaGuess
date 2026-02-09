@@ -165,7 +165,7 @@ h1{
 
   @media (max-width:770px){
     #maincontainer{
-      width:400px;
+      width:350px;
       display:block;
     }
     .answers{
