@@ -11,16 +11,16 @@ let gamemode = "standard";
 
 window.onload = function () {
     colorSample = document.getElementById("colorSample");
-    document.getElementById("score").innerHTML = "0/0";
+    document.getElementById("score").innerHTML = "0/10";
 }
 
 function changedifficulty() {
     if(document.getElementById("switch").checked == false){
         gamemode = "standard";
     }else{
-        gamemode = "flipped"; //GET THIS TO WORK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MAYBE MAKE A NEW SWITCH!!!!!!!!!!!!!!!!!!!!!!!!!!
+        gamemode = "flipped";
     }
-}
+}//changedifficulty
 
 
 
@@ -51,7 +51,8 @@ function startGame(diff){
     }
     
     loadNewQuestion();
-}
+}//startgame
+
 function loadNewQuestion(){
     colorCode = getRandomHexCode();
     colorSample.innerHTML = "";
@@ -83,7 +84,7 @@ function loadNewQuestion(){
         answers[correctAnswer].style.backgroundColor = colorCode;
     }
     hexes[correctAnswer] = colorCode;
-}
+}//loadnewquestion
 
 function getRandomHexCode(){
     let result = [];
@@ -93,7 +94,7 @@ function getRandomHexCode(){
         result.push(hexRef[Math.floor(Math.random() * 16)]);
     }
     return result.join('');
-}
+}//getrandomhexcode
 
 function pop(button){
     if(flipflop == false){
@@ -101,7 +102,7 @@ function pop(button){
     flipflop = true;
     setTimeout(recolour, 250, button);
     }
-}
+}//pop
 function recolour(button){
     if(gamemode == "standard"){
         if(document.getElementById(button).innerHTML == colorCode){
@@ -124,15 +125,14 @@ function recolour(button){
         }
     }
     setTimeout(disappear, 250, button);
-}
+}//recolour
 function disappear(button) {
     document.getElementById(button).style.animation = "none";
     setTimeout(anotherquestion, 500, button);
     
-}
+}//disappear
 function anotherquestion(button) {
-    total++;
-    document.getElementById("score").innerHTML = score + "/" + total;
+    document.getElementById("score").innerHTML = score + "/10";
     document.getElementById(button).style.backgroundColor = "#CFCCD6";
     flipflop = false;
     if(total == 10){
@@ -140,11 +140,11 @@ function anotherquestion(button) {
     }else{
     loadNewQuestion();
     }
-}
+}//anotherquestion
 function endGame(){
     for (let i = 0; i < answers.length; i++){
         answers[i].style.display = "none";
         colorSample.style.display = "none";
         document.getElementById("title").innerHTML = "Final Score:";
     }
-}
+}//endgame

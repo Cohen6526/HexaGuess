@@ -162,3 +162,30 @@ h1{
   .slider.round:before {
     border-radius: 50%;
   }
+
+  @media (max-width:770px){
+    #maincontainer{
+      width:400px;
+      display:block;
+    }
+    .answers{
+      width:300px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    #answerbox{
+      width:330px;
+    }
+    #colorSample{
+      width:300px;
+    }
+    #scoreboard{
+      width:300px;
+    }
+    h1{
+      width:300px;
+      margin-left:auto;
+      margin-right:auto;
+      display:block;
+    }
+  }
