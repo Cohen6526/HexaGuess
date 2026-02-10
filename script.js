@@ -147,6 +147,7 @@ function endGame(){
         answers[i].style.display = "none";
         colorSample.style.display = "none";
         document.getElementById("title").innerHTML = "Final Score:";
+        document.getElementById("replay").style.display = "block";
     }
 }//endgame
 
@@ -184,3 +185,6 @@ window.addEventListener('beforeinstallprompt', (e) => {
     });
   });
 }); 
+function yarr(){
+    window.location.reload();
+}
