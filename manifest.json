@@ -1,0 +1,17 @@
+{"theme_color":"#b19fcb","background_color":"#a57da6","icons":[{"purpose":"maskable","sizes":"512x512","src":"icons/icon512_maskable.png","type":"image/png"},{"purpose":"any","sizes":"512x512","src":"icons/icon512_rounded.png","type":"image/png"}],"orientation":"any","display":"standalone","dir":"auto","lang":"en-US","name":"HexaGuess","short_name":"HexaGuess", "start_url":"/", "screenshots": [
+    {
+      "src": "screenshots/screenshot1.png",
+      "sizes": "1006x476",
+      "type": "image/png",
+      "form_factor": "wide",
+      "purpose": "any"
+    },
+    {
+      "src": "screenshots/screenshot2.png",
+      "sizes": "492x1000",
+      "type": "image/png",
+      "purpose": "any"
+    }
+]
+ }
+

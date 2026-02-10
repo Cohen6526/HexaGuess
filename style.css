@@ -165,8 +165,10 @@ h1{
 
   @media (max-width:770px){
     #maincontainer{
-      width:350px;
+      width:80%;
       display:block;
+      margin:0px;
+      border-radius:30px;
     }
     .answers{
       width:300px;
