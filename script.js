@@ -31,6 +31,7 @@ function startGame(diff){
     document.getElementById("gamemodechooser").style.display = "none";
     document.getElementById("scoreboard").style.display = "block";
     document.getElementById("colorSample").style.display = "block";
+    document.getElementById("colorSample").style.height = "300px";
     
     answers.push(document.getElementById("0"));
     answers.push(document.getElementById("1"));
