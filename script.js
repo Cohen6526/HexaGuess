@@ -186,5 +186,22 @@ window.addEventListener('beforeinstallprompt', (e) => {
   });
 }); 
 function yarr(){
-    window.location.reload();
+    document.getElementById("easy").style.display = "inline-block";
+    document.getElementById("medium").style.display = "inline-block";
+    document.getElementById("hard").style.display = "inline-block";
+    document.getElementById("gamemodechooser").style.display = "block";
+    document.getElementById("scoreboard").style.display = "none";
+    document.getElementById("colorSample").style.display = "none";
+    document.getElementById("colorSample").style.backgroundColor = "#CFCCD6";
+    document.getElementById("replay").style.display = "none";
+    for (let i = 0; i < answers.length; i++){
+        answers[i].style.display = "none";
+        answers[i].style.backgroundColor = "#CFCCD6";
+    }
+    document.getElementById("title").innerHTML = "Hexadecimal Color Code Guessing Game! <br> Choose Difficulty:";
+    total = 0;
+    score = 0;
+    answers = [];
+    document.getElementById("score").innerHTML = score + "/10";
+
 }
